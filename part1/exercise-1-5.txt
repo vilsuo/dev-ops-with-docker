@@ -1,0 +1,29 @@
+Script started on 2024-02-17 12:25:05+02:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="117" LINES="30"]
+[?2004h]0;vilsuo@DESKTOP-TJAM3HL: /mnt/d/Pc/Documents/fullstack/devopswithdocker/part1[01;32mvilsuo@DESKTOP-TJAM3HL[00m:[01;34m/mnt/d/Pc/Documents/fullstack/devopswithdocker/part1[00m$ docker exec -it 8d sh
+[?2004l/usr/src/app # [6ntail -f .\l[J[J/usr/src/app # tail -f .[J
+../  ./
+/usr/src/app # tail -f .[J[J
+server    text.log
+/usr/src/app # tail -f [Jte/usr/src/app # tail -f text.log [J[J
+2024-02-17 10:25:30 +0000 UTC
+2024-02-17 10:25:32 +0000 UTC
+2024-02-17 10:25:34 +0000 UTC
+2024-02-17 10:25:36 +0000 UTC
+2024-02-17 10:25:38 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2024-02-17 10:25:40 +0000 UTC
+2024-02-17 10:25:42 +0000 UTC
+2024-02-17 10:25:44 +0000 UTC
+2024-02-17 10:25:46 +0000 UTC
+2024-02-17 10:25:48 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2024-02-17 10:25:50 +0000 UTC
+2024-02-17 10:25:52 +0000 UTC
+2024-02-17 10:25:54 +0000 UTC
+2024-02-17 10:25:56 +0000 UTC
+^C
+/usr/src/app # [6nexit
+[?2004h]0;vilsuo@DESKTOP-TJAM3HL: /mnt/d/Pc/Documents/fullstack/devopswithdocker/part1[01;32mvilsuo@DESKTOP-TJAM3HL[00m:[01;34m/mnt/d/Pc/Documents/fullstack/devopswithdocker/part1[00m$ exit
+[?2004lexit
+
+Script done on 2024-02-17 12:26:02+02:00 [COMMAND_EXIT_CODE="130"]
