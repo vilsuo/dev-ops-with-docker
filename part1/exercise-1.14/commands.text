@@ -1,0 +1,5 @@
+# backend
+docker build . -t exa-back && docker run -p 8080:8080 exa-back
+
+# frontend
+docker build . -t exa-front && docker run -p 5000:5000 exa-front
