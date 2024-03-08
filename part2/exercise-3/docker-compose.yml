@@ -1,11 +1,14 @@
 version: '3.8'
 
 services:
-  front:
-    image: exa-front
+  frontend:
+    image: example-front
+    build: ../../material-applications/example-frontend
     ports:
       - 5000:5000
-  back:
-    image: exa-back
+
+  backend:
+    image: example-back
+    build: ../../material-applications/example-backend
     ports:
       - 8080:8080
