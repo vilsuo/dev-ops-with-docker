@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  front:
+    image: exa-front
+    ports:
+      - 5000:5000
+  back:
+    image: exa-back
+    ports:
+      - 8080:8080
