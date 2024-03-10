@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  frontend:
+    image: example-front
+    build: ../../material-applications/example-frontend
+    ports:
+      - 5000:5000
+
+  backend:
+    image: example-back
+    build: ../../material-applications/example-backend
+    ports:
+      - 8080:8080
+    environment:
+      - REDIS_HOST=redis
+      # The hostname for postgres database. (port will default to 5432 the default for Postgres)
+      - POSTGRES_HOST=postgres
+      # database user. Default: postgres
+      - POSTGRES_USER=postgres
+      # database password. Default: postgres
+      - POSTGRES_PASSWORD=secret
+      # database name. Default: postgres
+      - POSTGRES_DATABASE=tietokanta
+    depends_on:
+      - redis
+      - postgres
+
+  redis:
+    image: redis
+
+  postgres:
+    image: postgres
+    environment:
+      - POSTGRES_PASSWORD=secret
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=tietokanta
